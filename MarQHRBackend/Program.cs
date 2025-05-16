@@ -21,3 +21,19 @@ class Colaborador
         };
     }
 }
+
+class Program
+{
+    static List<Colaborador> colaboradores = new List<Colaborador>();
+    static void Main(string[] args)
+    {
+        Console.write("Mini Sistema de Benefícios MarQ HR!");
+        CadastrarColaborador();
+    }
+
+    static void CadastrarColaborador()
+    {
+        Console.Write("Digite o Nome do Colaborador: ")
+        String nome = Console.ReadLine();
+    }
+}
