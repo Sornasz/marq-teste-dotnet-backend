@@ -27,13 +27,22 @@ class Program
     static List<Colaborador> colaboradores = new List<Colaborador>();
     static void Main(string[] args)
     {
-        Console.write("Mini Sistema de Benefícios MarQ HR!");
+        Console.Write("Mini Sistema de Benefícios MarQ HR!");
         CadastrarColaborador();
     }
 
     static void CadastrarColaborador()
     {
-        Console.Write("Digite o Nome do Colaborador: ")
-        String nome = Console.ReadLine();
+        Console.Write("Digite o Nome do Colaborador: ");
+        string nome = Console.ReadLine();
+
+        Console.Write("Digite O CPF do colaborador: ");
+        string cpf = Console.ReadLine();
+
+        var colaborador = new Colaborador(nome, cpf);
+
+        colaboradores.Add(colaborador);
+
+        Console.WriteLine("Colaborador Cadastrado com êxito!");
     }
 }
